@@ -1,28 +1,25 @@
-//url k end id doctor ki hogi
-//token doctor ka login wala hoga 
-GET http://localhost:6000/dashboard/doctor/appointments_details/60b66f8f92442b4b34c4eeb9
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGY5MjQ0MmI0YjM0YzRlZWI5IiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJhYmMxMjM0IiwidHlwZSI6ImRvY3RvciIsIl9fdiI6MH0sImlhdCI6MTYyMjU2OTA0MCwiZXhwIjoxNjIyNjU1NDQwfQ.1asgBoxpTDX-up4ossBNfRDwlTXiXJem-t9Ag688OLs
+//Doctor login jwt token 
+GET http://localhost:6000/dashboard/doctor/appointments_details/MongoDbID(Doctor)
+Authorization: Bearer jwt token
 Content-Type: application/json
 
 ###
 
-//url k end id doctor ki hogi
-//token doctor ka login wala hoga 
-GET http://localhost:6000/dashboard/doctor/appointments/60b66f8f92442b4b34c4eeb9
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGY5MjQ0MmI0YjM0YzRlZWI5IiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJhYmMxMjM0IiwidHlwZSI6ImRvY3RvciIsIl9fdiI6MH0sImlhdCI6MTYyMjU2OTA0MCwiZXhwIjoxNjIyNjU1NDQwfQ.1asgBoxpTDX-up4ossBNfRDwlTXiXJem-t9Ag688OLs
+//Doctor login jwt token 
+GET http://localhost:6000/dashboard/doctor/appointments/MongoDbID(Doctor)
+Authorization: Bearer jwt token
 Content-Type: application/json
 
 ###
 
-//token patient ka login wala hoga 
+//Patient login jwt token 
 GET http://localhost:6000/dashboard/patient/activeDoctors
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGE5MjQ0MmI0YjM0YzRlZWI4IiwiZW1haWwiOiJ4eXpAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ4eXoxMjM0IiwidHlwZSI6InBhdGllbnQiLCJfX3YiOjB9LCJpYXQiOjE2MjI1Njg5MzcsImV4cCI6MTYyMjY1NTMzN30.OVYQCi9SyaOl6qduRtOiLucj_MhpvtjDOvGadiyzDYQ
+Authorization: Bearer jwt token
 Content-Type: application/json
 
 ###
 
-//url k end id patient ki hogi
-//token patient ka login wala hoga 
-GET http://localhost:6000/dashboard/patient/appointments/60b66f8a92442b4b34c4eeb8
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGE5MjQ0MmI0YjM0YzRlZWI4IiwiZW1haWwiOiJ4eXpAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ4eXoxMjM0IiwidHlwZSI6InBhdGllbnQiLCJfX3YiOjB9LCJpYXQiOjE2MjI1Njg5MzcsImV4cCI6MTYyMjY1NTMzN30.OVYQCi9SyaOl6qduRtOiLucj_MhpvtjDOvGadiyzDYQ
+//Patinet login jwt token 
+GET http://localhost:6000/dashboard/patient/appointments/MongoDbID(Patient)
+Authorization: Bearer jwt token
 Content-Type: application/json
