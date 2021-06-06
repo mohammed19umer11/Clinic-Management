@@ -1,0 +1,51 @@
+POST http://localhost:6000/user/login
+Content-Type: application/json
+
+{
+    "email" : "xyz@gmail.com",
+    "password":"xyz1234"
+}
+
+###
+
+POST http://localhost:6000/user/login
+Content-Type: application/json
+
+{
+    "email" : "abc@gmail.com",
+    "password":"abc1234"
+}
+
+###
+
+POST http://localhost:6000/user/signup
+Content-Type: application/json
+
+{
+    "email":"cs1812268@szabist.pk",
+    "password":"xyz1234",
+    "type":"patient"
+}
+
+###
+
+POST http://localhost:6000/user/signup
+Content-Type: application/json
+
+{
+    "email":"abc@gmail.com",
+    "password":"abc1234",
+    "type":"doctor"
+}
+
+###
+
+PATCH http://localhost:6000/user/authenticate
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6ZmFsc2UsIl9pZCI6IjYwYjI3MmM2Y2RhNTc4MDI1NDYzZjViZiIsImVtYWlsIjoiYWJjQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiYXJodW0xMjM0IiwidHlwZSI6ImRvY3RvciIsIl9fdiI6MH0sImlhdCI6MTYyMjMwNzUyNywiZXhwIjoxNjIyMzkzOTI3fQ.3CCsvLz2eiLqTsofJ9_NXwHAf0qAQ98BRLB6l-cKoos
+Content-Type: application/json
+
+{
+    "email":"abc@gmail.com"
+}
+
+

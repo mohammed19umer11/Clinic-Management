@@ -1,0 +1,33 @@
+//Patient can create appointment so patient login jwt token
+POST http://localhost:6000/appointment/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGE5MjQ0MmI0YjM0YzRlZWI4IiwiZW1haWwiOiJ4eXpAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ4eXoxMjM0IiwidHlwZSI6InBhdGllbnQiLCJfX3YiOjB9LCJpYXQiOjE2MjI1Njg5MzcsImV4cCI6MTYyMjY1NTMzN30.OVYQCi9SyaOl6qduRtOiLucj_MhpvtjDOvGadiyzDYQ
+Content-Type: application/json
+
+{
+    "doctorID" : "60b272c6cda578025463f5bf",
+    "patientID" : "60b260e25163204664b6aab6",
+    "time" : "10 : 03 PM"
+}
+
+###
+
+//Docotr can prescribe treatment so doctor login jwt token
+//treatment can be add to appointment so end mein url miien id appoint ki hogi
+//and body mein bhi same appointmeni ID hogi
+POST http://localhost:6000/treatment/add/60b6731192442b4b34c4eebe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGY5MjQ0MmI0YjM0YzRlZWI5IiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJhYmMxMjM0IiwidHlwZSI6ImRvY3RvciIsIl9fdiI6MH0sImlhdCI6MTYyMjU2OTA0MCwiZXhwIjoxNjIyNjU1NDQwfQ.1asgBoxpTDX-up4ossBNfRDwlTXiXJem-t9Ag688OLs
+Content-Type: application/json
+
+{
+    "appointmentID" : "60b6731192442b4b34c4eebe",
+    "treatment" : "Brufen"
+}
+
+###
+
+//Docotr can end appoint (set status true) so doctor login jwt token
+//also id in the of url should be appointmentID
+PATCH http://localhost:6000/appointment/update/60b6731192442b4b34c4eebe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6dHJ1ZSwiX2lkIjoiNjBiNjZmOGY5MjQ0MmI0YjM0YzRlZWI5IiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwicGFzc3dvcmQiOiJhYmMxMjM0IiwidHlwZSI6ImRvY3RvciIsIl9fdiI6MH0sImlhdCI6MTYyMjU2OTA0MCwiZXhwIjoxNjIyNjU1NDQwfQ.1asgBoxpTDX-up4ossBNfRDwlTXiXJem-t9Ag688OLs
+Content-Type: application/json
+
