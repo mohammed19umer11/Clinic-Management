@@ -41,7 +41,7 @@ Content-Type: application/json
 ###
 
 PATCH http://localhost:6000/user/authenticate
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InN0YXR1cyI6ZmFsc2UsIl9pZCI6IjYwYjI3MmM2Y2RhNTc4MDI1NDYzZjViZiIsImVtYWlsIjoiYWJjQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiYXJodW0xMjM0IiwidHlwZSI6ImRvY3RvciIsIl9fdiI6MH0sImlhdCI6MTYyMjMwNzUyNywiZXhwIjoxNjIyMzkzOTI3fQ.3CCsvLz2eiLqTsofJ9_NXwHAf0qAQ98BRLB6l-cKoos
+Authorization: Bearer jwt token
 Content-Type: application/json
 
 {
